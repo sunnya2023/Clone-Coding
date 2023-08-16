@@ -1,46 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
 
 .container{
-    width: 100%;
     height: 100vh;
-    background-color:rgb(63,112,244) ;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #4070f4;
 }
+
 .form{
-    width: 100%;
     max-width: 430px;
+    width: 100%;
     border-radius: 6px;
     background-color: #fff;
     padding: 30px;
 }
-
 header{
     font-size: 28px;
     font-weight: 600;
-    color: rgb(55,46,66);
+    color: #232836;
     text-align: center;
 }
+
 form{
     margin-top: 30px;
 }
+
 .form .field{
-    position: relative;
-    height: 50px;
     width: 100%;
+    height: 50px;
     margin-top: 20px;
-    border-radius: 6px;
+    position: relative;
 }
 
-.field input ,
+.field input,
 .field button{
     width: 100%;
     height: 100%;
@@ -49,33 +50,36 @@ form{
     font-weight: 400;
     border-radius: 6px;
 }
+
 .field input{
     padding: 0 15px;
-    border: 1px solid #EFE6D8;
+    border: 1px solid #cacaca;
     outline: none;
 }
 .field input:focus{
-    border-bottom-width: 2px;
-}
-.field button{
-    color: #fff;
-    background-color: #0171d3;
-    cursor: pointer;
-    transition: all .3s ease;
-}
-.field button:hover{
-    background-color: #016dcb;
+    border-bottom-width:2px ;
 }
 .eye-icon{
     position: absolute;
-    font-size: 18px;
-    color: #8b8b8b;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
     cursor: pointer;
-    padding: 5px
+    padding: 5px;
 }
+
+.field button{
+    color: #fff;
+    background-color: #0171d3;
+    transform: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #016dcb
+}
+
 .form-link{
     text-align: center;
     margin-top: 10px;
@@ -88,73 +92,33 @@ form{
     color: #232836;
 }
 
-.form a{ 
+.form a{
     color: #0171d3;
     text-decoration: none;
 }
-
-.form-content a:hover{
+.form a:hover{
     text-decoration: underline;
 }
 
 .line{
     position: relative;
-    width: 100%;
     height: 1px;
-    background-color: #d4d4d4;
+    width: 100%;
     margin: 36px 0;
+    background-color: #d4d4d4;
 }
 
 .line::before{
-content: "Or";
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-background-color: #fff;
-padding: 0 15px;
-}
-.media-options a{
-    display: flex;
-   align-items: center;
-   justify-content: center;
-}
-a.facebook{
-    color: #fff;
-    background-color:#4267B2;
-}
-a.facebook .Facebook-icon{
-    height: 28px;
-    width: 28px;
-    color: #0171d3;
-   
-    font-size: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #fff;
-}
-
-.Facebook-icon,
-.google-img{
+    content: 'Or';
     position: absolute;
     top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #232836;
+    padding: 0 15px;
 }
 
-img.google-img{
-    width: 36px;
-    height: 36px;
-object-fit: cover;
-}
-a.google{
-    border: 1px solid #cacaca;
-}
-a.google span{
-    color: #232836;
-    opacity: 0.6;
-    font-weight: 500;
+.media-options a{
+    display: flex;
 }
